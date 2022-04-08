@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+ul {
+display: flex;
+justify-content:space-between;
+list-style-type: none;
+text-transform: capitalize;
+width: 90%;
+height: 20px;
+background-color: aqua;
+}
+ul li:hover{
+    color:blueviolet;
+}
+h1::first-letter{
+    color: greenyellow;
+    text-transform: capitalize;
+    font-size:75px ;
+}
+h1::first-line{
+    color:rgb(214, 77, 77)
+}
+h1::before  {  
+    color: brown;
+    text-transform: capitalize;
+    
+}
+h1 + p {
+    color: blueviolet;
+}
+#para1 p {
+    text-align: center;
+color: brown;
+}
+div{
+    background-color:none;
+    width: 70%;
+    border: 30px saddlebrown;
+    padding: 80px;
+    margin: 60px;
+}
+ol li:first-child{
+color:rgb(245, 133, 217);
+}
+ol li:last-child{
+    color: rgb(185, 85, 18);
+}
+ol:first-of-type{
+    color: blueviolet;
+}
+p::first-line{
+    color: blue;
+}
+.galley img{
+    width: 50px;
+    height:20px;
+    padding:2px;
+    margin:2px;
+}
+#picture{
+    width: 20px;
+    background-color: rgb(255, 127, 234);
+    animation: picture 7s infinite;
+}
+@keyframes picture {
+    from{ background-color:rgb(255, 127, 202)}
+    to {background-color: brown;}
+}
+@keyframes picture{
+    40%{ border-bottom-left-radius:100px;}
+}
+#name{
+    width: 10%;
+    background-color:rgb(182, 44, 140);
+    border: 2px solid black;
+    animation: name 8s infinite;
+
+}
+@keyframes name{
+    from{ border-left-width:20px;}
+}
+#general~p{
+    color: darkolivegreen;
+}
+#adjacent+p{
+    color: chocolate;
+}
+.color{
+    width: 1px;
+    height:5px;
+    display: flex;
+    border: 2px;
+
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.color{
+    width: 3px;
+    height: 2px;
+}
+a:hover{
+    color: gold;
+}
+</style>
+<body>
+    <h1> this is a todays class</h1>
+    <ul>
+    <li> name</li>
+    <li>section</li>
+    <li>number</li>
+    <li>identity</li>
+    </ul>
+    <div id="picture"></div>
+    <div id="name"></div>
+    <p id="para1"> class of selectors</p>
+    
+        <img src="C:\Users\Amd\Downloads\idotted.jpg" alt="idotted"style="width:200px;height:150px">
+        <img src="C:\Users\Amd\Downloads\idotted.jpg" alt="idotted"style="width:200px;height:150px">
+<img src="C:\Users\Amd\Downloads\img_forest.jpg"alt="img_forest"style="width:200px;height:150px">
+    <p stylebackground-color: darksalmon;> selector uses the id attribute of an HTML element to select a specific element.
+
+        The id of an element is unique within a page. so the id selector is used to select one unique element!
+        
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+        
+        Example</p>
+        <div>
+           selector uses the id attribute of an HTML element to select a specific element.
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+            
+            Example
+        </div>
+        <ol>
+            <li> maths</li>
+            <li> physics</li>
+            <li>chemistry</li>
+            <li>biology</li>
+        </ol>
+        <img src="C:\Users\Amd\Downloads/download.jpg" alt="download">
+    <div class="general">
+        <p>it is a general sibiling</p>
+        <p>it is not a general</p>
+    </div>
+    <p> it is not applicable</p>
+    <div class="adjacent">
+        <p>it is a adjacent sibiling</p>
+        <p> it is a one adjacent sibiling </p>
+
+ </div>
+    <p>it is normal adjacent </p>
+    </div>
+    <div class="link">
+        <a href="https://www.youtube.com">youtube</a> 
+        <a href="https://www.snapchat.com">snapchat</a> 
+        <a href="https://www.whatsapp.com">whatsapp</a>
+    </div>
+</body>
+</html>

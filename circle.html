@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin: 20%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        animation: move 4s infinite linear;
+        animation-iteration-count: 3s;
+    }
+    @keyframes move{
+        0%{
+            transform:rotate(0deg) translateX(10px) rotate(90deg);
+        }
+        100%{
+            transform: rotate(360deg) translateX(10px) rotate(90deg);
+        }
+    }
+</style>
+<body>
+    <div><img src="C:\Users\Amd\Downloads/img_lights.jpg " style="width:100px; height:60px"></div>
+</body>
+</html>

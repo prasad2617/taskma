@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .prasad{
+            width:150px;
+            height:200px;
+            background-color: antiquewhite;
+            animation: prasad 5s;
+        }
+        @keyframes prasad {
+            from{background-color: aquamarine;}
+            to{background-color: blue;}
+      }
+      
+      
+.test{
+    width: 300px;
+    height:100px;
+    background-color: brown;
+    transform: translate(10px,30px);
+} 
+
+div{
+    width: 105px;
+    height: 50px;
+    background-color: cornflowerblue;
+    border: 2px sandybrown; 
+}
+#rotate{
+    transform: rotate(40deg);
+}
+div rock {
+    margin:100%;
+    width:30px;
+    height:20px;
+    border-radius: 100%;
+    background-color: darkgreen;
+    animation:4s infinite linear;
+}
+@keyframes rock{ 
+    0% {
+        transform:rotate(0deg) translateX(50px) rotate(odeg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg) ;
+    }
+}
+    </style>
+    <body>
+     <h1>today class is transforms</h1>
+
+    <div class="prasad"></div>
+
+    <div class="test">
+        this is a transalte of the 2d animations </div><br><br><br><br>
+        <div id="rotate">
+        it is rotate</div>
+
+</body>
+</html>
